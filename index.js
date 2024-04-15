@@ -46,7 +46,7 @@
       
           const a1 = document.createElement('a');
           a1.setAttribute('download', item.download);
-          a1.setAttribute('href', item.download1);
+          a1.setAttribute('href', item.download);
       
           const img = document.createElement('img');
           img.setAttribute('src', item.src);
