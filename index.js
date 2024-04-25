@@ -12,6 +12,7 @@
     const data = [
         {
           type: 'type1',
+          name:"个人博客模板-1页",
           download: './zip/个人博客模板-1页.rar',
           src: './img/个人博客模板-1页.png',
           href: './img/个人博客模板-1页.png',
@@ -56,8 +57,15 @@
           c_items.appendChild(a1);
       
           const a2 = document.createElement('a');
+
           a2.setAttribute('href', item.href);
           a2.textContent = '查看大图';
+          var p3=document.createElement('p');
+          p3.innerHTML=item.name;
+          p3.className="ellipsis"
+
+
+          c_items.appendChild(p3)
       
           c_items.appendChild(a2);
           content.appendChild(c_items);
@@ -68,5 +76,3 @@
       typeSelect.addEventListener('change', render);
       
       render();
-
-
