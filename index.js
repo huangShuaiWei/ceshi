@@ -37,6 +37,7 @@
           c_items.className = 'c_items';
       
           const a1 = document.createElement('a');
+          
           a1.setAttribute('download', item.download);
           a1.setAttribute('href', item.download);
       
@@ -49,7 +50,7 @@
       
           const a2 = document.createElement('a');
 
-          a2.setAttribute('href', item.href);
+          a2.setAttribute('href', item.src);
           a2.textContent = '查看大图';
           var p3=document.createElement('p');
           p3.innerHTML=item.name;
